@@ -1,2 +1,3 @@
-# ai-powered-movie-app
-AI Powered Movie App 
+# Filmpire
+
+AI Powered Movie App
