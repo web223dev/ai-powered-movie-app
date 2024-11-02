@@ -1,16 +1,91 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: ["class"],
-    content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
+  darkMode: ["class"],
+  content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
-  	extend: {
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		},
-  		colors: {}
-  	}
+    extend: {
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      colors: {
+        primary: {
+          50: "#eef2ff",
+          100: "#e0e7ff",
+          200: "#c7d2fe",
+          500: "#6366f1",
+          600: "#4f46e5",
+          700: "#4338ca",
+          800: "#3730a3",
+          900: "#312e81",
+        },
+        dark: {
+          "grey-0": "#18212f",
+          "grey-50": "#111827",
+          "grey-100": "#1f2937",
+          "grey-200": "#374151",
+          "grey-300": "#4b5563",
+          "grey-400": "#6b7280",
+          "grey-500": "#9ca3af",
+          "grey-600": "#d1d5db",
+          "grey-700": "#e5e7eb",
+          "grey-800": "#f3f4f6",
+          "grey-900": "#f9fafb",
+
+          "blue-100": "#075985",
+          "blue-700": "#e0f2fe",
+          "green-100": "#166534",
+          "green-700": "#dcfce7",
+          "yellow-100": "#854d0e",
+          "yellow-700": "#fef9c3",
+          "silver-100": "#374151",
+          "silver-700": "#f3f4f6",
+          "indigo-100": "#3730a3",
+          "indigo-700": "#e0e7ff",
+
+          "red-100": "#fee2e2",
+          "red-700": "#b91c1c",
+          "red-800": "#991b1b",
+        },
+        light: {
+          "grey-0": "#fff",
+          "grey-50": "#f9fafb",
+          "grey-100": "#f3f4f6",
+          "grey-200": "#e5e7eb",
+          "grey-300": "#d1d5db",
+          "grey-400": "#9ca3af",
+          "grey-500": "#6b7280",
+          "grey-600": "#4b5563",
+          "grey-700": "#374151",
+          "grey-800": "#1f2937",
+          "grey-900": "#111827",
+
+          "blue-100": "#e0f2fe",
+          "blue-700": "#0369a1",
+          "green-100": "#dcfce7",
+          "green-700": "#15803d",
+          "yellow-100": "#fef9c3",
+          "yellow-700": "#a16207",
+          "silver-100": "#e5e7eb",
+          "silver-700": "#374151",
+          "indigo-100": "#e0e7ff",
+          "indigo-700": "#4338ca",
+
+          "red-100": "#fee2e2",
+          "red-700": "#b91c1c",
+          "red-800": "#991b1b",
+        },
+      },
+      boxShadow: {
+        "light-shadow-sm": "0 1px 2px rgba(0, 0, 0, 0.04)",
+        "light-shadow-md": "0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06)",
+        "light-shadow-lg": "0 2.4rem 3.2rem rgba(0, 0, 0, 0.12)",
+        "shadow-sm": "0 1px 2px rgba(0, 0, 0, 0.4)",
+        "shadow-md": "0px 0.6rem 2.4rem rgba(0, 0, 0, 0.3)",
+        "shadow-lg": "0 2.4rem 3.2rem rgba(0, 0, 0, 0.4)",
+      },
+    },
   },
   plugins: [require("tailwindcss-animate")],
 };
