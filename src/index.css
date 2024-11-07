@@ -6,10 +6,10 @@
   :root {
     --radius: 0.5rem;
   }
-  html {
+  /* html {
     @apply text-[62.5%];
-  }
+  } */
   body {
-    @apply font-primary text-light-grey-700 min-h-screen leading-normal text-[1.6rem] [transition:_color_0.3s,background-color_0.3s];
+    @apply font-primary text-light-grey-700 min-h-screen leading-normal text-base [transition:_color_0.3s,background-color_0.3s];
   }
 }
